@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06C960522930D7F20087FD0A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C960512930D7F20087FD0A /* MyTableViewCell.swift */; };
 		06DD541029301F7200C94242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD540F29301F7200C94242 /* AppDelegate.swift */; };
 		06DD541229301F7200C94242 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD541129301F7200C94242 /* SceneDelegate.swift */; };
 		06DD541429301F7200C94242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DD541329301F7200C94242 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06C960512930D7F20087FD0A /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		06DD540C29301F7200C94242 /* tableLesson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableLesson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DD540F29301F7200C94242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06DD541129301F7200C94242 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				06DD541129301F7200C94242 /* SceneDelegate.swift */,
 				06DD541329301F7200C94242 /* ViewController.swift */,
 				06DD541529301F7200C94242 /* Main.storyboard */,
+				06C960512930D7F20087FD0A /* MyTableViewCell.swift */,
 				06DD541829301F7400C94242 /* Assets.xcassets */,
 				06DD541A29301F7400C94242 /* LaunchScreen.storyboard */,
 				06DD541D29301F7400C94242 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06DD541429301F7200C94242 /* ViewController.swift in Sources */,
+				06C960522930D7F20087FD0A /* MyTableViewCell.swift in Sources */,
 				06DD541029301F7200C94242 /* AppDelegate.swift in Sources */,
 				06DD541229301F7200C94242 /* SceneDelegate.swift in Sources */,
 			);
@@ -303,7 +307,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,7 +334,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
