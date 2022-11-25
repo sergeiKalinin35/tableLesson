@@ -11,6 +11,10 @@ class ViewController: UIViewController {
     
     var users = ["Rick", "Morty"]
     
+    
+    
+    
+    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -20,6 +24,14 @@ class ViewController: UIViewController {
         
      
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let userDetailsVC = segue.destination as? NextViewController else { return }
+     //   userDetailsVC.userNameLabel.text = sender as? String
+        userDetailsVC.userName = sender as? String
+    }
+    
+    
 
 
 }
