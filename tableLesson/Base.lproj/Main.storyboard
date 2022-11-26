@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="957.60000000000002" y="83.208395802098963"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Manger View Controller-->
         <scene sceneID="q74-1B-PmO">
             <objects>
-                <viewController id="gBf-wM-K8V" sceneMemberID="viewController">
+                <viewController id="gBf-wM-K8V" customClass="ContactMangerViewController" customModule="tableLesson" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="quP-5e-Yzf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,16 +72,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="b2g-Sl-AOY">
+                                <rect key="frame" x="83" y="147" width="209" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifx-Nb-Ac8">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SAVE"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kS-0R-gbh">
+                                        <rect key="frame" x="130" y="0.0" width="79" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CANCEL">
+                                            <color key="baseForegroundColor" red="0.89330971240000001" green="0.09805227071" blue="0.21939542889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelAction" destination="gBf-wM-K8V" eventType="touchUpInside" id="T0w-TS-U1K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Imp-0z-7RP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="Ahw-xz-HzM" firstAttribute="leading" secondItem="Imp-0z-7RP" secondAttribute="leading" constant="20" id="Gr4-FU-ZmY"/>
+                            <constraint firstItem="b2g-Sl-AOY" firstAttribute="top" secondItem="Ahw-xz-HzM" secondAttribute="bottom" constant="59" id="H7c-fU-eHU"/>
+                            <constraint firstItem="b2g-Sl-AOY" firstAttribute="centerX" secondItem="quP-5e-Yzf" secondAttribute="centerX" id="OhX-Qu-EQ8"/>
                             <constraint firstItem="Imp-0z-7RP" firstAttribute="trailing" secondItem="Ahw-xz-HzM" secondAttribute="trailing" constant="20" id="cZo-Q8-cYr"/>
                             <constraint firstItem="Ahw-xz-HzM" firstAttribute="centerX" secondItem="quP-5e-Yzf" secondAttribute="centerX" id="e8w-fD-JYQ"/>
                             <constraint firstItem="Ahw-xz-HzM" firstAttribute="top" secondItem="Imp-0z-7RP" secondAttribute="top" constant="54" id="twd-9P-4yt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userNameTextField" destination="Ahw-xz-HzM" id="zee-5e-nyO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMc-GN-qEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +128,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tsE-c9-TAg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="Bko-nf-VQJ" firstAttribute="centerX" secondItem="q2e-2f-xYn" secondAttribute="centerX" id="Tw2-uf-FbI"/>
                             <constraint firstItem="Bko-nf-VQJ" firstAttribute="top" secondItem="tsE-c9-TAg" secondAttribute="top" constant="60" id="XcD-9e-vxx"/>
@@ -140,6 +165,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

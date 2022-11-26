@@ -24,8 +24,10 @@ class NextViewController: UIViewController {
     }
     
     
-    
-    
+    //выгрузка из памяти 
+    deinit {
+        print("closed")
+    }
     
     
     
