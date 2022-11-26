@@ -47,7 +47,7 @@
                         <barButtonItem key="backBarButtonItem" title="back" id="uzo-d6-86G"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="nNi-gw-WKw">
                             <connections>
-                                <segue destination="gBf-wM-K8V" kind="presentation" id="gzc-ur-SRO"/>
+                                <segue destination="gBf-wM-K8V" kind="presentation" modalPresentationStyle="fullScreen" id="gzc-ur-SRO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -64,7 +64,7 @@
             <objects>
                 <viewController id="gBf-wM-K8V" customClass="ContactMangerViewController" customModule="tableLesson" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="quP-5e-Yzf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ahw-xz-HzM">
@@ -79,6 +79,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="79" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="SAVE"/>
+                                        <connections>
+                                            <segue destination="HzA-cy-4J0" kind="unwind" unwindAction="unwindWithSegue:" id="7Ku-yP-Zkg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kS-0R-gbh">
                                         <rect key="frame" x="130" y="0.0" width="79" height="31"/>
@@ -109,6 +112,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMc-GN-qEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="HzA-cy-4J0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1742" y="283"/>
         </scene>

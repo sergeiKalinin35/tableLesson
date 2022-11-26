@@ -32,6 +32,16 @@ class ViewController: UIViewController {
     }
     
     
+    // передача данных с другого вью и отображение
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        
+     guard let contactManagerVC = segue.source as? ContactMangerViewController else { return }
+        guard let userName = contactManagerVC.userNameTextField.text else { return }
+        users.append(userName)
+    }
+    
+    
+    
 
 
 }
